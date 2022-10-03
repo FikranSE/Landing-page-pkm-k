@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kanit:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Titan+One&display=swap');
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #d7882d #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #d7882d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    transition: all .2s;
+    scroll-behavior:smooth;
+}
+
+body{
+    width: 100%;
+    min-height:100vh;
+}
+
+header{
+    width: 100%;
+    height:760px;
+    display:flex;
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    height:90px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.logo{
+    margin-left:190px;
+}
+.logo img{
+    width:150px;
+}
+
+nav ul{
+    height:100%;
+    display: flex;
+    align-items:center;
+    margin-left:auto;
+    margin-right:190px;
+    list-style: none;
+    flex-direction: row;
+    column-gap:50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size:16px;
+    color:#000;
+}
+nav ul li a:hover{
+    color:grey;
+}
+
+nav ul li .kuisioner{
+    padding:13px 17px;
+    background: #F58230;
+    border-radius: 3px;
+    cursor: pointer;
+}
+nav ul li .kuisioner:hover{
+    background: #F57000;
+    color:white;
+}
+
+main{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+
+}
+main::after{
+    content: "";
+    width: 100%;
+    background: #29B45C;
+    height:10px;
+    position: absolute;
+    bottom:0;
+}
+main .caption-main{
+    margin-left:210px;
+    margin-top:-120px;
+    display:flex;
+    flex-direction: column;
+    row-gap:20px;
+}
+main .caption-main h4{
+    font-size:50px;
+}
+main .caption-main .Selengkapnya{
+    width:200px;
+    padding:13px 17px;
+    background: #F58230;
+    border-radius: 3px;
+    border:none;
+    font-size:16px;
+    cursor: pointer;
+}
+main .caption-main .Selengkapnya:hover{
+    background: #F57000;
+    color:white;
+}
+main img{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:900px;
+}
